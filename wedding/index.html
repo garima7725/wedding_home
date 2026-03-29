@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradeep 💍 Karishma | Wedding Invitation</title>
+  <meta name="description" content="You are cordially invited to the wedding celebration of Chi. Pradeep Yogi and Ayu. Karishma on 19 April 2026 at Lapala, Rajgarh (Alwar)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Petals -->
+  <div class="petals-container" id="petalsContainer"></div>
+
+  <!-- ===== BACKGROUND MUSIC (local file – autoplay) ===== -->
+  <audio id="bgMusic" autoplay loop preload="auto">
+    <source src="song.mpeg" type="audio/mpeg" />
+  </audio>
+
+  <!-- Tiny floating music indicator -->
+  <div class="music-indicator" id="musicIndicator" title="Click to pause/play">
+    <div class="music-bars">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <span class="mi-label">Now Playing</span>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="mandala-top"></div>
+    <div class="mandala-bottom"></div>
+    <div class="hero-content">
+      <div class="om-symbol">ॐ</div>
+      <p class="invite-label">🌸 शुभ विवाह निमंत्रण 🌸</p>
+      <h1 class="couple-names">
+        <span class="groom-name">Pradeep</span>
+        <span class="amp-heart">❤️</span>
+        <span class="bride-name">Karishma</span>
+      </h1>
+      <p class="wedding-date-hero">19 April 2026</p>
+      <p class="location-hero">📍 Lapala, Rajgarh, Alwar</p>
+      <div class="divider-ornament">
+        <span>✦</span><span class="line"></span><span>🌺</span><span class="line"></span><span>✦</span>
+      </div>
+      <div class="countdown-wrapper">
+        <p class="countdown-label">शुभ मुहूर्त तक</p>
+        <div class="countdown" id="countdown">
+          <div class="count-box"><span id="days">00</span><label>दिन</label></div>
+          <div class="count-box"><span id="hours">00</span><label>घंटे</label></div>
+          <div class="count-box"><span id="mins">00</span><label>मिनट</label></div>
+          <div class="count-box"><span id="secs">00</span><label>सेकंड</label></div>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#schedule" class="scroll-btn">देखें पूरा कार्यक्रम ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MANTRA SECTION ===== -->
+  <section class="mantra-section" id="mantra">
+    <div class="section-inner">
+      <div class="mantra-card ganesh-card">
+        <div class="mantra-icon">🙏</div>
+        <h3>गणेश मंत्र</h3>
+        <p class="mantra-text">ॐ वक्रतुण्ड महाकाय,<br />कोटि सूर्य समप्रभः।<br />निर्विघ्नं कुरु मे देव,<br />सर्वकार्येषु सर्वदा।।</p>
+      </div>
+      <div class="mantra-card prayer-card">
+        <div class="mantra-icon">🌼</div>
+        <h3>उद्घाटन प्रार्थना</h3>
+        <p class="mantra-text">विघ्न हरण मंगल करण,<br />श्री गणपति महाराज।<br />प्रथम निमंत्रण आपको,<br />पूरण कीजे काज।।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COUPLE SECTION ===== -->
+  <section class="couple-section" id="couple">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">💑 वर - वधू परिचय</span>
+        <h2>दो दिलों का मिलन</h2>
+      </div>
+      <div class="couple-cards">
+        <div class="person-card groom-card">
+          <div class="person-avatar groom-avatar">🤵</div>
+          <h3 class="person-title">Chi.</h3>
+          <h2 class="person-name">Pradeep Yogi</h2>
+          <div class="person-detail">
+            <p><strong>पिता:</strong> श्री गोकुल चंद योगी</p>
+            <p><strong>माता:</strong> श्रीमती राजकुमारी</p>
+            <p><strong>दादाजी:</strong> स्व. श्री सूरजभान योगी</p>
+            <p><strong>दादीजी:</strong> स्व. श्रीमती गिंदो देवी</p>
+          </div>
+        </div>
+
+        <div class="heart-connector">
+          <div class="heart-pulse">💍</div>
+        </div>
+
+        <div class="person-card bride-card">
+          <div class="person-avatar bride-avatar">👰</div>
+          <h3 class="person-title">Ayu.</h3>
+          <h2 class="person-name">Karishma</h2>
+          <div class="person-detail">
+            <p><strong>पिता:</strong> श्री राजेश कुमार जी</p>
+            <p><strong>माता:</strong> श्रीमती नरबादा देवी</p>
+            <p><strong>नानाजी:</strong> स्व. श्री कैलाश चंद वैद्य जी</p>
+            <p><strong>नानीजी:</strong> श्रीमती ललिता देवी</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE SECTION ===== -->
+  <section class="schedule-section" id="schedule">
+    <div class="section-inner">
+      <div class="section-header light">
+        <span class="section-tag">📅 मांगलिक कार्यक्रम</span>
+        <h2>शुभ आयोजन</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Day 1 -->
+        <div class="day-group">
+          <div class="day-label">बुधवार, 15 अप्रैल 2026</div>
+          <div class="event-card">
+            <div class="event-icon-wrap"><span class="event-icon">💍</span></div>
+            <div class="event-info">
+              <h4>लग्न (सगाई)</h4>
+              <p class="event-time">🕔 5:00 PM</p>
+              <p class="event-venue">📍 निज निवास (Residence)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-group">
+          <div class="day-label">शुक्रवार, 17 अप्रैल 2026</div>
+          <div class="event-card">
+            <div class="event-icon-wrap"><span class="event-icon">🪔</span></div>
+            <div class="event-info">
+              <h4>चाक</h4>
+              <p class="event-time">🕘 9:00 AM</p>
+              <p class="event-venue">📍 निज निवास</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-group">
+          <div class="day-label">रविवार, 19 अप्रैल 2026</div>
+          <div class="event-card">
+            <div class="event-icon-wrap"><span class="event-icon">🌿</span></div>
+            <div class="event-info">
+              <h4>हल्दी</h4>
+              <p class="event-time">🕘 11:00 AM</p>
+              <p class="event-venue">📍 श्री पल्लीवाल जैन महासभा</p>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-icon-wrap"><span class="event-icon">🎵</span></div>
+            <div class="event-info">
+              <h4>महिला संगीत</h4>
+              <p class="event-time">🕛 12:00 PM</p>
+              <p class="event-venue">📍 श्री पल्लीवाल जैन महासभा</p>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-icon-wrap"><span class="event-icon">🎁</span></div>
+            <div class="event-info">
+              <h4>भात</h4>
+              <p class="event-time">🕓 4:00 PM</p>
+              <p class="event-venue">📍 श्री पल्लीवाल जैन महासभा</p>
+            </div>
+          </div>
+          <div class="event-card highlight-event">
+            <div class="event-icon-wrap"><span class="event-icon">🍽️</span></div>
+            <div class="event-info">
+              <h4>प्रीतिभोज (Reception Feast)</h4>
+              <p class="event-time">🕕 6:15 PM</p>
+              <p class="event-venue">📍 श्री पल्लीवाल जैन महासभा</p>
+            </div>
+          </div>
+          <div class="event-card highlight-event baraat-card">
+            <div class="event-icon-wrap"><span class="event-icon">🚌</span></div>
+            <div class="event-info">
+              <h4>बारात प्रस्थान</h4>
+              <p class="event-time">🕕 6:15 PM</p>
+              <p class="event-venue">📍 निवास → लपाला (बस द्वारा)</p>
+              <p class="baraat-dest">🏁 गंतव्य: लपाला, राजगढ़ (अलवर)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VENUE SECTION ===== -->
+  <section class="venue-section" id="venue">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">📍 स्थान</span>
+        <h2>विवाह स्थल</h2>
+      </div>
+      <div class="venue-card main-venue">
+        <div class="venue-icon">💒</div>
+        <h3>लपाला, राजगढ़</h3>
+        <p>Lapala, Rajgarh (Alwar), Rajasthan</p>
+        <span class="venue-badge">विवाह स्थल</span>
+      </div>
+      <div class="venue-card">
+        <div class="venue-icon">🏠</div>
+        <h3>निज निवास</h3>
+        <p>2 K 390-91, शिवाजी पार्क, अलवर (राजस्थान)</p>
+        <span class="venue-badge secondary">पारिवारिक निवास</span>
+      </div>
+      <div class="venue-card">
+        <div class="venue-icon">🏛️</div>
+        <h3>श्री पल्लीवाल जैन महासभा</h3>
+        <p>अलवर, राजस्थान</p>
+        <span class="venue-badge secondary">समारोह स्थल</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISHESH AAGRAH ===== -->
+  <section class="vishesh-section" id="vishesh">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">🌺 विशेष आग्रह</span>
+        <h2>सादर आमंत्रित</h2>
+      </div>
+      <div class="family-group-card">
+        <div class="fgc-header"><span class="fgc-icon">🌼</span><h3>पक्ष परिवार</h3></div>
+        <div class="name-pills">
+          <span class="pill gold-pill">केला</span>
+          <span class="pill gold-pill">माया — बनवंत जी</span>
+          <span class="pill gold-pill">मनोज — सुरेन्द्र जी</span>
+          <span class="pill gold-pill">संदीप</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NANIHAL PAKSH ===== -->
+  <section class="nanihal-section" id="nanihal">
+    <div class="section-inner">
+      <div class="section-header light">
+        <span class="section-tag">🏡 नानीहाल पक्ष</span>
+        <h2>ननिहाल परिवार</h2>
+      </div>
+      <div class="family-trio">
+        <div class="family-pair-card">
+          <div class="pair-icon">🙏</div>
+          <p class="pair-names">हनुमान जी<br /><span class="pair-sub">बारजी देवी</span></p>
+        </div>
+        <div class="family-pair-card">
+          <div class="pair-icon">🙏</div>
+          <p class="pair-names">बनवारीलाल जी<br /><span class="pair-sub">रोशनी देवी</span></p>
+        </div>
+        <div class="family-pair-card">
+          <div class="pair-icon">💫</div>
+          <p class="pair-names">साक्षी<br /><span class="pair-sub">हिमांश</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SWAGATKARTA ===== -->
+  <section class="swagat-section" id="swagat">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">🎊 स्वागतकर्ता</span>
+        <h2>स्वागत समिति</h2>
+      </div>
+      <div class="swagat-grid">
+        <div class="swagat-chip"><span>🌸</span> बिमला योगी</div>
+        <div class="swagat-chip"><span>🌸</span> अनिता योगी</div>
+        <div class="swagat-chip"><span>🌸</span> उमा योगी</div>
+        <div class="swagat-chip"><span>🌸</span> रीमा — दिगपाल जी</div>
+        <div class="swagat-chip"><span>🌟</span> अभिनव</div>
+        <div class="swagat-chip"><span>🌟</span> गरिमा</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== UTTARAKANSHI ===== -->
+  <section class="uttara-section" id="uttara">
+    <div class="section-inner">
+      <div class="section-header light">
+        <span class="section-tag">👑 उत्तरकांशी</span>
+        <h2>मुख्य आयोजक</h2>
+      </div>
+      <div class="uttara-cards">
+        <div class="uttara-card">
+          <div class="uttara-avatar">🙏</div>
+          <h3>वैद्य सेदूराम योगी</h3>
+          <p>प्रमुख आयोजक</p>
+        </div>
+        <div class="uttara-card">
+          <div class="uttara-avatar">🙏</div>
+          <h3>सुनील योगी</h3>
+          <p>प्रमुख आयोजक</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DARSHANABHILASHI ===== -->
+  <section class="darshan-section" id="darshan">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">🌟 दर्शनाभिलाषी</span>
+        <h2>शुभकामना देने वाले</h2>
+      </div>
+      <div class="darshan-grid">
+        <div class="darshan-pair"><span class="d-name">कन्हाराम</span><span class="d-sep">•</span><span class="d-name">प्रहलाद जी</span></div>
+        <div class="darshan-pair"><span class="d-name">रत्तीराम जी</span><span class="d-sep">•</span><span class="d-name">सत्यवान जी</span></div>
+        <div class="darshan-pair"><span class="d-name">जगदीश जी</span><span class="d-sep">•</span><span class="d-name">कृष्ण जी</span></div>
+        <div class="darshan-pair"><span class="d-name">राजपाल</span><span class="d-sep">•</span><span class="d-name">नरेश कुमार</span></div>
+        <div class="darshan-pair"><span class="d-name">नितिन</span><span class="d-sep">•</span><span class="d-name">हेमंत</span></div>
+        <div class="darshan-pair"><span class="d-name">डॉ. दिव्यांशु (गौरव)</span><span class="d-sep">•</span><span class="d-name">किंशुक</span></div>
+        <div class="darshan-pair"><span class="d-name">खुशांश</span><span class="d-sep">•</span><span class="d-name">तुशान</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="section-inner">
+      <div class="section-header light">
+        <span class="section-tag">📞 संपर्क करें</span>
+        <h2>परिवार से मिलें</h2>
+      </div>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-avatar">🙏</div>
+          <h4>वैद्य सेदूराम योगी</h4>
+          <a href="tel:9413689679" class="phone-btn">📞 9413689679</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-avatar">🙏</div>
+          <h4>सुनील योगी</h4>
+          <a href="tel:9887423999" class="phone-btn">📞 9887423999</a>
+        </div>
+      </div>
+      <div class="ladies-note">
+        <span>🌸</span>
+        <p>महिलाओं को भी सादर आमंत्रण है</p>
+        <span>🌸</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-om">ॐ</div>
+    <p class="footer-blessing">शुभं भवतु • मंगलम् भवतु</p>
+    <p class="footer-names">Pradeep 💍 Karishma</p>
+    <p class="footer-date">19 April 2026 | Lapala, Rajgarh (Alwar)</p>
+    <div class="footer-divider">❀ ✿ ❀</div>
+    <p class="footer-note">With love & blessings from the Yogi Family</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
